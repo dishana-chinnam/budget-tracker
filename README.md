@@ -1,7 +1,7 @@
-##💸 Budget Tracker - MERN Stack Application
+##Budget Tracker - MERN Stack Application
 A full-stack Expense Tracker application built with MongoDB, Express.js, React.js, and Node.js to help users track their income and expenses.
 
-##🚀 Features
+##Features
 Add, edit, and delete income/expense transactions
 
 View a list of all transactions with type and amount
@@ -14,7 +14,7 @@ RESTful API with Express and Node.js
 
 Environment variable configuration with dotenv
 
-##🛠️ Tech Stack
+##Tech Stack
 Frontend: React.js (Client folder)
 
 Backend: Node.js, Express.js (Server folder)

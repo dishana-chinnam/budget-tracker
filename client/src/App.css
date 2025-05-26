@@ -2,41 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-:root{
-  --color-yollow : #f9c74f;
-  --color-purple: #9d4edd;
+:root {
+  --color-yellow: #facc15; /* Brighter yellow */
+  --color-purple: #7c3aed; /* Better purple tone */
 }
 
-* > *{
+*,
+*::before,
+*::after {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-gray-50 text-gray-800;
 }
 
 .App {
   text-align: center;
-  padding: 4em 0;
+  padding: 4em 1em;
+  @apply max-w-5xl mx-auto;
 }
 
-.bg-yellow{
-  background-color: var(--color-yollow);
+/* Colors */
+.bg-yellow {
+  background-color: var(--color-yellow);
 }
 
-.bg-purple{
+.bg-purple {
   background-color: var(--color-purple);
 }
 
-.chart .title{
+.chart .title {
   position: absolute;
   left: 0;
   right: 0;
   top: 40%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-.form-input{
-  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+/* Enhanced form input */
+.form-input {
+  @apply mt-2 block w-full py-2 px-4 border border-gray-300 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 sm:text-sm transition duration-150 ease-in-out;
 }
